@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: #ededed;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+html {
+  height: 100%;
+  margin: 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003285;
+    z-index: 10; 
+    flex: 0 0 auto;
+}
+
+
+.header .logo-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header .logo {
+    color: white;
+    text-decoration: none;
+    margin-right: 250px;
+    font-size: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.ncc-logo {
+    height: 100px;
+}
+
+.carousel, .carousel-inner, .carousel-item {
+    height: 85vh; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+#our-motto, #our-pledge {
+    padding: 50px 20px;
+}
+
+#our-motto, #our-pledge h2 {
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+#our-motto p {
+    max-width: 800px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: black;
+    text-align: left;
+}
+
+#our-pledge p{
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: black;
+    text-align: center;
+}
+
+#our-motto img {
+    width: 400px; 
+    height: auto; 
+    position: absolute; 
+    right: 0; 
+}
+
+.flag-image {
+    width: 400px;
+    height: auto;
+}
+
+
+.line-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem; 
+    margin: 20px 0; 
+}
+
+.line-text::before,
+.line-text::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid black; 
+    margin: 0 10px; 
+}
+
+
+#ncc-song {
+    padding: 50px 20px;
+    background-color: #f1f1f1; 
+    color: #333; 
+    text-align: center; 
+}
+
+#ncc-song h2 {
+    margin-bottom: 20px;
+}
+
+#ncc-song pre {
+    white-space: pre-wrap; 
+    word-break: break-word; 
+    max-width: 800px;
+    margin: 0 auto; 
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+section {
+  flex: 0 0 auto; /* These sections will take up as much space as needed */
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+  }
+
+  .header .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+    order: 1; 
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end; 
+    order: 0; 
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
+
+  .ncc-logo {
+    height: 80px;
+    margin-top: 10px;
+    order: 2; 
+  }
+}
+
+  @media (max-width: 768px) {
+    .ncc-logo {
+      height: 80px;
+    }
+  
+    #our-motto img {
+      width: 300px;
+    }
+  
+    .flag-image {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px;
+    }
+  
+    #our-motto,
+    #our-pledge {
+      padding: 30px 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+      height: 50vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #our-motto img {
+      position: static;
+      margin: 20px auto;
+      display: block;
+    }
+  }
+
+/* Unity and Discipline Section */
+#about {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+}
+
+#about h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  color: black;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#acitivities h2 {
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+}
+
+#activities .d-flex {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#activities .carousel-container {
+  width: 48%;
+}
+
+#activities .carousel {
+  width: 300px;
+  height: 300px;
+  margin-left: 10;
+  padding-left: 50px;
+}
+
+#activities .carousel-item {
+  height: 300px;
+  width: 300px;
+}
+
+#activities .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#activities h3 {
+  font-size: 24px;
+  margin-left: 60px;
+  text-align: left;
+  color: black;
+}
+
+
+.contact {
+  padding: 2rem 0;
+  background-color: #003285;
+  color: #fff;
+  flex: 1 0 auto;
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 500px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.column h2 {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #F1F1F1;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: #F1F1F1;
+  color: black;
+}
+
+.btn i {
+  margin-right: 0.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Existing media queries for screens up to 768px */
+}
+
+@media (max-width: 480px) {
+  /* Styles for screens up to 480px (typical Android phone screens) */
+  .header .logo {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  #our-motto p,
+  #our-pledge p,
+  #ncc-song pre {
+    font-size: 1rem;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+
+  #activities .carousel {
+    width: 250px;
+    height: 250px;
+    padding-left: 0; /* Remove horizontal padding */
+  }
+
+  #activities .carousel-item {
+    height: 250px;
+    width: 250px;
+  }
+
+  #activities h3 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center; /* Center the text */
+  }
+
+  .column {
+    width: 100%;
+    padding: 0 10px; /* Add some padding for small screens */
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Styles for screens up to 360px (smaller Android phones) */
+  .header .logo {
+    font-size: 18px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  #our-motto p,
+  #our-pledge p,
+  #ncc-song pre {
+    font-size: 0.9rem;
+  }
+
+  #about p {
+    font-size: 14px;
+  }
+
+  #activities .carousel {
+    width: 200px;
+    height: 200px;
+  }
+
+  #activities .carousel-item {
+    height: 200px;
+    width: 200px;
+  }
+
+  #activities h3 {
+    font-size: 18px;
+  }
+}
+
+#events h2 {
+  color: black;
+} 
+
+#past-events h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.album-container {
+  margin: 20px;
+}
+
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album img {
+  max-width: 300px;
+  max-height: 200px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .album img {
+      max-width: 200px;
+      max-height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .album img {
+      max-width: 150px;
+      max-height: 100px;
+  }
+}
+
+#past-events {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+}
+
+#past-events h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#past-events .event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#past-events .event-item {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#past-events .event-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#past-events .event-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+#past-events .event-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 480px) {
+  #past-events .event-item {
+    width: 100%;
+  }
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000; /* Set text color to black */
+}
+
+.card-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; /* Set text color to black */
+}
+
+.card-text {
+  font-size: 14px;
+  color: #000; /* Set text color to black */
+}
+
+.faculty-image {
+  width: 150px;
+  height: auto;
+}
+
+.mr-3 {
+  margin-right: 15px;
+}
+
+/* For screens smaller than 576px (e.g., smartphones) */
+@media (max-width: 575.98px) {
+  .card {
+    max-width: 100%;
+    margin: 20px 10px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mr-3 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .faculty-image {
+    width: 80px;
+  }
+}
+
+/* For screens between 576px and 767.98px (e.g., larger smartphones and smaller tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  .faculty-image {
+    width: 90px;
+  }
+}
+
+/* For screens between 768px and 991.98px (e.g., tablets and smaller desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card {
+    max-width: 70%;
+    margin: 20px auto;
+  }
+}
+
+/* For screens larger than 992px (e.g., desktops and larger screens) */
+@media (min-width: 992px) {
+  .card {
+    max-width: 500px;
+    margin: 20px auto;
+  }
+}
+
+/* Adjust the height of carousel images for smaller screens */
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+  }
+}
